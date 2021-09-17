@@ -2,11 +2,11 @@ import CurrentTemp from "./CurrentTemp/CurrentTemp";
 import "./MainBar.css";
 import MoreInfo from "./MoreInfo/MoreInfo";
 
-const MainBar = () => {
+const MainBar = ({ weather }) => {
   return (
     <div className="MainBar">
-      <CurrentTemp />
-      <MoreInfo />
+      <CurrentTemp weather={weather} />
+      <MoreInfo weather={weather} />
     </div>
   );
 };

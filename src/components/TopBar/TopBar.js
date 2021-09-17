@@ -33,7 +33,13 @@ const TopBar = () => {
     );
 
     setHours(date.getHours());
-    setMinutes(date.getMinutes());
+    function checkMinutes(minute) {
+      if (minute < 10) {
+        minute = "0" + minute;
+      }
+      return minute;
+    }
+    setMinutes(checkMinutes(date.getMinutes()));
   }, 1000);
 
   return (
