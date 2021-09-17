@@ -29,3 +29,49 @@
   color: #545454;
   font-size: 1.3rem;
 }
+
+.MoreInfo__infos {
+  display: flex;
+  align-items: center;
+}
+
+.MoreInfo__infos__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #d9d9d9;
+  margin: 10px 40px 10px 0;
+}
+
+.MoreInfo__infos__info img {
+  height: 30px;
+  opacity: 0.6;
+}
+
+.MoreInfo__infos__info h4 {
+  font-size: 2rem;
+  margin: 5px 0 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.MoreInfo__infos__info h4 span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  vertical-align: top;
+  padding-bottom: 5px;
+}
+
+.MoreInfo__infos__info h4 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.MoreInfo__infos__info p {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
