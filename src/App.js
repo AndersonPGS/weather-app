@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 import "./App.css";
+import BottomBar from "./components/BottomBar/BottomBar";
 import MainBar from "./components/MainBar/MainBar";
 import TopBar from "./components/TopBar/TopBar";
 
@@ -59,6 +60,7 @@ function App() {
       <div className="App">
         <TopBar />
         <MainBar weather={weather} />
+        <BottomBar />
       </div>
     );
   }
