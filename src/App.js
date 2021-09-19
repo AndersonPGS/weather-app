@@ -60,7 +60,7 @@ function App() {
       <div className="App">
         <TopBar />
         <MainBar weather={weather} />
-        <BottomBar />
+        <BottomBar weather={weather} />
       </div>
     );
   }
