@@ -1,17 +1,19 @@
 import Today from "./Today/Today";
 import "./TodayList.css";
 
-const TodayList = () => {
+const TodayList = ({ weather }) => {
   return (
     <div className="TodayList">
-      <Today actived={true} />
-      <Today />
-      <Today />
-      <Today />
-      <Today />
-      <Today />
-      <Today />
-      <Today />
+      {weather.hourly.map((data, index) => {
+        if (index === 0) {
+          return <Today actived={true} data={data} />;
+        } else if (index >= 8) {
+          // eslint-disable-next-line array-callback-return
+          return;
+        } else {
+          return <Today actived={false} data={data} />;
+        }
+      })}
     </div>
   );
 };
