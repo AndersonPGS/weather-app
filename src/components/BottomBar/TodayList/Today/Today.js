@@ -4,7 +4,7 @@ import img from "../../../../assets/images/02d.png";
 
 const Today = ({ actived }) => {
   return (
-    <div className="Today">
+    <div className={`Today ${actived ? "active" : ""}`}>
       <p className="Today__hour">12:00</p>
       <img src={img} alt="" className="Today__img" />
       <p className="Today__temp">
