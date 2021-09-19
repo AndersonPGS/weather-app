@@ -32,7 +32,13 @@ const TopBar = () => {
         date.getFullYear()
     );
 
-    setHours(date.getHours());
+    function checkHours(hours) {
+      if (hours < 10) {
+        hours = "0" + hours;
+      }
+      return hours;
+    }
+    setHours(checkHours(date.getHours()));
     function checkMinutes(minute) {
       if (minute < 10) {
         minute = "0" + minute;
