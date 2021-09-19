@@ -1,7 +1,7 @@
 import "./BottomBar.css";
 import TodayList from "./TodayList/TodayList";
 
-const BottomBar = () => {
+const BottomBar = ({ weather }) => {
   return (
     <div className="BottomBar">
       <div className="BottomBar__menu">
@@ -16,7 +16,7 @@ const BottomBar = () => {
         </div>
       </div>
 
-      <TodayList />
+      <TodayList weather={weather} />
     </div>
   );
 };
