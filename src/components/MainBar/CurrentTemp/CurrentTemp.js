@@ -1,5 +1,5 @@
 import "./CurrentTemp.css";
-import ImageSelector from "./ImageSelector/ImageSelector";
+import ImageSelector from "../../Functions/ImageSelector/ImageSelector";
 
 const CurrentTemp = ({ weather }) => {
   return (
