@@ -8,6 +8,11 @@
   flex-direction: column;
   align-items: center;
   border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.Today:hover {
+  background-color: rgba(40, 40, 40, 0.5);
 }
 
 .active {
