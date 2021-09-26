@@ -1,0 +1,81 @@
+.Week {
+  color: #d9d9d9;
+  margin: 0 20px;
+  background-color: rgba(40, 40, 40, 0.7);
+  width: 90px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.Week:hover {
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+.active {
+  background: linear-gradient(130deg, #288fe4, #1b4ec7 70%);
+}
+
+.Week__hour {
+  margin-bottom: 0;
+  height: 20%;
+  font-weight: 200;
+}
+
+.imgDiv {
+  height: 50px;
+}
+
+.Week__img {
+  width: 50px;
+  margin: 0;
+}
+
+.Week__minmax {
+  margin: auto 0 10px 4px;
+  height: 25%;
+  font-size: 22px;
+  font-weight: 400;
+  display: none;
+  opacity: 0.8;
+}
+
+.Week:hover .Week__minmax {
+  display: flex;
+}
+
+.Week__minmax p {
+  margin: 3px 0 0 0;
+  padding: 0;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.Week__minmax span {
+  font-size: 15px;
+  padding-top: 2px;
+}
+
+.Week__temp {
+  margin: 5px 0 0 2px;
+  height: 25%;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  transition: all 0.2s linear;
+  opacity: 1;
+}
+
+.Week__temp span {
+  font-size: 15px;
+  padding-top: 2px;
+}
+
+.Week:hover .Week__temp {
+  height: 0;
+  opacity: 0;
+}
