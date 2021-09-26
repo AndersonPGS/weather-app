@@ -11,11 +11,15 @@ const Tomorrow = ({ actived, data }) => {
   return (
     <div className={`Tomorrow ${actived ? "active" : ""}`}>
       <p className="Tomorrow__hour">{currentHour}</p>
-      <img
-        src={ImageSelector(data.weather[0].icon)}
-        alt=""
-        className="Tomorrow__img"
-      />
+
+      <div className="imgDiv">
+        <img
+          src={ImageSelector(data.weather[0].icon)}
+          alt=""
+          className="Week__img"
+        />
+      </div>
+
       <p className="Tomorrow__temp">
         {Math.round(data.temp)}
         <span>º</span>

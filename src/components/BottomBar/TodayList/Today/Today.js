@@ -11,11 +11,15 @@ const Today = ({ actived, data }) => {
   return (
     <div className={`Today ${actived ? "active" : ""}`}>
       <p className="Today__hour">{currentHour}</p>
-      <img
-        src={ImageSelector(data.weather[0].icon)}
-        alt=""
-        className="Today__img"
-      />
+
+      <div className="imgDiv">
+        <img
+          src={ImageSelector(data.weather[0].icon)}
+          alt=""
+          className="Week__img"
+        />
+      </div>
+
       <p className="Today__temp">
         {Math.round(data.temp)}
         <span>º</span>
