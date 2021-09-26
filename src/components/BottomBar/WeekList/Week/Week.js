@@ -7,7 +7,7 @@ const Week = ({ actived, data }) => {
   const day = date.toLocaleDateString("pt-BR", { weekday: "long" });
   return (
     <div className={`Week ${actived ? "active" : ""}`}>
-      <p className="Week__hour">{day.replace("-feira", "")}</p>
+      <p className="Week__day">{day.replace("-feira", "")}</p>
 
       <div className="imgDiv">
         <img
