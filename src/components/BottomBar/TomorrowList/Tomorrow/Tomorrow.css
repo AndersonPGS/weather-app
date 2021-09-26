@@ -1,0 +1,44 @@
+.Tomorrow {
+  color: #d9d9d9;
+  margin: 0 20px;
+  background-color: rgba(40, 40, 40, 0.7);
+  width: 90px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.Tomorrow:hover {
+  background-color: rgba(40, 40, 40, 0.5);
+}
+
+.active {
+  background: linear-gradient(130deg, #288fe4, #1b4ec7 70%);
+}
+
+.Tomorrow__hour {
+  margin-bottom: 0;
+  height: 20%;
+  font-weight: 200;
+}
+
+.Tomorrow__img {
+  width: 50px;
+  margin: 0;
+}
+
+.Tomorrow__temp {
+  margin: 5px 0 0 2px;
+  height: 25%;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+}
+
+.Tomorrow__temp span {
+  font-size: 15px;
+  padding-top: 2px;
+}

@@ -1,5 +1,6 @@
 import "./BottomBar.css";
 import TodayList from "./TodayList/TodayList";
+import TomorrowList from "./TomorrowList/TomorrowList";
 
 const BottomBar = ({ weather }) => {
   return (
@@ -16,7 +17,8 @@ const BottomBar = ({ weather }) => {
         </div>
       </div>
 
-      <TodayList weather={weather} />
+      {/* <TodayList weather={weather} /> */}
+      <TomorrowList weather={weather} />
     </div>
   );
 };
