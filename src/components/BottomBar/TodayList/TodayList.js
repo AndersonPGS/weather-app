@@ -8,7 +8,7 @@ const TodayList = ({ weather }) => {
       {weather.hourly.map((data, index) => {
         if (index === 0) {
           TodayNumber++;
-          return <Today actived={true} data={data} />;
+          return <Today actived={true} data={data} key={index} />;
         } else if (TodayNumber >= 8) {
           // eslint-disable-next-line array-callback-return
           return;
@@ -17,7 +17,7 @@ const TodayList = ({ weather }) => {
           return;
         } else {
           TodayNumber++;
-          return <Today actived={false} data={data} />;
+          return <Today actived={false} data={data} key={index} />;
         }
       })}
     </div>

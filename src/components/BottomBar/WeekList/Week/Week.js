@@ -25,7 +25,7 @@ const Week = ({ actived, data }) => {
       <p className="Week__minmax">
         {Math.round(data.temp.min)}
         <span>º</span>
-        <p>/</p>
+        <strong>/</strong>
         {Math.round(data.temp.max)}
         <span>º</span>
       </p>
