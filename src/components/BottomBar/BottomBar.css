@@ -24,6 +24,7 @@
 .actived h2 {
   opacity: 1;
   font-weight: 500;
+  transition: all 0.5s;
 }
 
 .BottomBar__menu h2:hover {
