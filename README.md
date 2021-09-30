@@ -1,2 +1,2 @@
-# Weather App in React JS Using Axios
-React App - Weather App
+# Weather App in React JS
+React App With Axios - Weather App
