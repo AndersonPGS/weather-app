@@ -1,19 +1,19 @@
-import "./MoreInfo.css";
-
-import feelsLike from "../../../assets/icons/feels-like.png";
 import clouds from "../../../assets/icons/clouds.png";
+import feelsLike from "../../../assets/icons/feels-like.png";
 import humidity from "../../../assets/icons/humidity.png";
 import uv from "../../../assets/icons/uv.png";
 import visibility from "../../../assets/icons/visibility.png";
 import windSpeed from "../../../assets/icons/wind-speed.png";
+import "./MoreInfo.css";
+
 
 const MoreInfo = ({ weather }) => {
   let km = weather.current.visibility / 1000;
   return (
     <div className="MoreInfo">
       <div className="MoreInfo__title">
-        <h1>Salvador</h1>
-        <h2>Bahia</h2>
+        <h1>Clima</h1>
+        <h2>atual</h2>
       </div>
       <div className="MoreInfo__infos">
         <div className="MoreInfo__infos__info">
